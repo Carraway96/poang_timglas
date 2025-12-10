@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Klasstimglas – Poängtävling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Klasstimglas</h1>
+    <p>Digitala “Harry Potter”-timglas för poäng i klassen</p>
+  </header>
+
+  <main class="app-main">
+    <section class="controls">
+      <h2>Lägg till nytt lag</h2>
+      <div class="add-team-form">
+        <input type="text" id="newTeamName" placeholder="Lagnamn (t.ex. Gryffindor)">
+        <input type="color" id="newTeamColor" value="#e74c3c" title="Välj färg">
+        <button id="addTeamBtn">Lägg till lag</button>
+      </div>
+
+      <div class="global-controls">
+        <button id="resetAllBtn">Nollställ alla poäng</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Lag & timglas</h2>
+      <div id="hourglassGrid" class="hourglass-grid">
+        <!-- Fylls av JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>Poängen sparas automatiskt i webbläsaren (på den här datorn).</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
